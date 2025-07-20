@@ -8,6 +8,9 @@ A Python script to capture and analyze network packets (TCP, UDP, ICMP) in real-
 - Captures IP packets and identifies protocols (TCP/UDP/ICMP).
 - Logs source/destination IP addresses.
 - Lightweight and customizable for security analysis.
+-Packet Size Information
+-Port Numbers for TCP/UDP:
+
 
 ## Usage
 1. Install dependencies:
