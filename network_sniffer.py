@@ -8,7 +8,7 @@ def packet_callback(packet):
         protocol = ip_layer.proto
         src_ip = ip_layer.src
         dst_ip = ip_layer.dst
-        packet_size = len(packet)  # Feature 1: Packet size
+        packet_size = len(packet)  
 
         # Determine the protocol
         protocol_name = ""
@@ -16,7 +16,7 @@ def packet_callback(packet):
             protocol_name = "ICMP"
         elif protocol == 6:
             protocol_name = "TCP"
-            src_port = packet[TCP].sport  # Feature 2: Port numbers for TCP/UDP
+            src_port = packet[TCP].sport  
             dst_port = packet[TCP].dport
         elif protocol == 17:
             protocol_name = "UDP"
